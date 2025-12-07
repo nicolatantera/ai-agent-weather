@@ -38,15 +38,43 @@ Built with:
 
 
 ## 🔧 Running Locally
+
+Clone the repository by either:
+
+### 1. Clone Repository
+
 ```bash
 # Clone repository
 git clone https://github.com/nicolatantera/ai-agent-weather.git
-cd ai-weather-agent
 
-# Install dependencies (frontend & backend)
-cd frontend && npm install
-cd .. && cd backend && npm install
+# Otherwise by downloading the zip file directly from Github
+```
 
-# Start local dev environments
-# For both backend and frontend:
+
+### 2. Install dependencies
+
+```bash
+# Install dependencies -> frontend
+cd frontend
+npm install
+```
+```bash
+# Install dependencies -> backend
+cd ../backend
+npm install
+```
+
+
+### 3. Start a local dev environment
+
+```bash
+# Open two terminals, one for backend:
+cd backend
 npm run dev
+
+# One for frontend:
+cd frontend
+npm run dev
+```
+
+Open up a web browser to the url `http://localhost:3000` and Enjoy!
