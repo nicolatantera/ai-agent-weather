@@ -37,6 +37,21 @@ Built with:
 
 
 
+## 🧪 Usage
+
+- Type a message like:
+```txt
+"What’s the weather this weekend in Oslo?"
+"Do I need an umbrella tomorrow in Rome?"
+"What's the weather like in New York?"
+```
+
+- If location or date is missing, the bot will ask for clarification.
+- On successful fetch: a day-by-day forecast appears in the chat.
+- On error (invalid location, API error, network issue): user sees a polite error message in the chat.
+
+
+
 ## 🔧 Running Locally
 
 Clone the repository by either:
