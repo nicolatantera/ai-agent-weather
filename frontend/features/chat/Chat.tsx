@@ -14,7 +14,7 @@ export default function Chat() {
   const { messages, sendMessage, agentLastMessageStatus } = useChatStream();
 
   //console.log(messages); // debug messages
-  //console.log("agent: ", agentLastMessageStatus); // debug status of agent last message
+  console.log("agent: ", agentLastMessageStatus); // debug status of agent last message
 
   return (
     <>

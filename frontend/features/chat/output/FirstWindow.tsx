@@ -6,7 +6,7 @@ interface FirstWindowProps extends React.ComponentPropsWithoutRef<"div"> {
 }
 
 const optionMessages = [
-  "What's the weather like in Genova?",
+  "What's the weather today in Florence?",
   "Do I need an umbrella in Milan?",
   "Weather this weekend in Rome",
   "Today's temperature in Bologna",
@@ -14,7 +14,7 @@ const optionMessages = [
 
 export default function FirstWindow({ onSend }: FirstWindowProps) {
   return (
-    <ChatWrapper className="items-center justify-center gap-8 ">
+    <ChatWrapper className="items-center justify-center gap-8">
       <div className="flex flex-col items-center justify-center gap-1">
         <h1 className="text-center text-4xl font-bold text-[#eeeeee]">How can i help you today?</h1>
         <h5 className="text-center font-bold text-[#999999]">Your personal assistant for real-time weather updates and forecasts</h5>
