@@ -12,13 +12,14 @@ type ForecastInput = {
 // Uses coordinates from geocode { lat, lon } to fetch weather data.
 export const forecast = tool({
   name: "forecast",
-  description: "Fetch weather forecast given latitude and longitude of a location, choosing the related dates given the user message intentions",
+  description:
+    "Receive a abject input containing the coordinates and the user message, then fetch weather forecast choosing the related dates given by the user message intentions",
   inputSchema: z.object({
     lat: z.number(),
     lon: z.number(),
     userMessage: z.string(),
   }),
-  execute: async ({ lat, lon, userMessage }: ForecastInput) => {
+  execute: async ({ lat, lon, userMessage }) => {
     // 1. Parse date range from user message using the chrono library
     const parsedDates = chrono.parse(userMessage);
     //console.log("parsed dates: ", parsedDates); // debug user message

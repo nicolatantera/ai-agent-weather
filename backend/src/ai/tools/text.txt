@@ -1,0 +1,9 @@
+2. a solution could be, use an ai agent to retrieve a location from the user message, and only that,
+   and hence save the location name in a variable to then pass to the main ai that will use inside
+   the geocode and later the forecast
+
+3. otherwise i'm starting to think, the 'messages' variable could be helpful somehow,
+
+4. another thing could be to pass the user message to the prompt as i did before, maybe that could help,
+   as i was thinking, how does the ai pass the user message to the forecast tool, how does he know which one is the user message
+   (thinking about when i was debugging the user message inside the forecast tool)

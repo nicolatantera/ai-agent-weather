@@ -26,9 +26,9 @@ type GeocodeApiResponse = {
 // Converts a location name into coordinates { lat, lon }
 export const geocode = tool({
   name: "geocode",
-  description: "Convert a location name into coordinates (latitude, longitude).",
-  inputSchema: z.object({ location: z.string() }),
-  execute: async ({ location }: { location: string }) => {
+  description: "Receive a abject input containing the location name as a string, and convert the location into coordinates (latitude, longitude).",
+  inputSchema: z.object({ location: z.string().describe("The location to get the coordinates for") }),
+  execute: async ({ location }) => {
     if (!location || location.length === 0) throw new Error("Location not found");
 
     console.log(`location: ${location} `);
